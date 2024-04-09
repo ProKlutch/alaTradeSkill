@@ -211,6 +211,32 @@ local index_spec = 20;
 
 local T_Recipe_Data = {
 --	TradeSkill
+	-- SoD Phase 3
+	-- BS
+	[446179] = { nil, 1, 2, 446179, 220738, 250, 250, 255, 260, 1, 1, { 221021, 220688, }, { 10, 1, }, nil, nil, nil, { 81986, }, }, -- Shoulderplates of Dread
+	[446188] = { nil, 1, 2, 446188, 220740, 250, 250, 255, 260, 1, 1, { 221021, 220688, }, { 10, 1, }, nil, nil, nil, { 81986, }, }, -- Fearmonger's Shoulderguards
+	[446191] = { nil, 1, 2, 446191, 220739, 250, 250, 255, 260, 1, 1, { 221021, 220688, }, { 10, 1, }, nil, nil, nil, { 81986, }, }, -- Baleful Pauldrons
+	-- LW
+	[446192] = { nil, 1, 3, 446192, 220745, 250, 250, 255, 260, 1, 1, { 221021, 220688, 15407, 8170, }, { 10, 1, 2, 6, }, nil, nil, nil, { 81986, }, }, -- Membrane of Dark Neurosis
+	[446190] = { nil, 1, 3, 446190, 220744, 250, 250, 255, 260, 1, 1, { 221021, 220688, 15412, 8170, }, { 10, 1, 8, 8, }, nil, nil, nil, { 81986, }, }, -- Wailing Chain Mantle
+	[446189] = { nil, 1, 3, 446189, 220748, 250, 250, 255, 260, 1, 1, { 221021, 220688, 7076, 8170, }, { 10, 1, 2, 12, }, nil, nil, nil, { 81986, }, }, -- Shoulderpads of Obsession
+	[446186] = { nil, 1, 3, 446186, 220743, 250, 250, 255, 260, 1, 1, { 221021, 220688, 15416, 8170, }, { 10, 1, 4, 10, }, nil, nil, nil, { 81986, }, }, -- Cacophonous Chain Shoulders
+	[446185] = { nil, 1, 3, 446185, 220742, 250, 250, 255, 260, 1, 1, { 221021, 220688, 15416, 8170, }, { 10, 1, 8, 8, }, nil, nil, nil, { 81986, }, }, -- Shrieking Spaulders
+	[446183] = { nil, 1, 3, 446183, 220747, 250, 250, 255, 260, 1, 1, { 221021, 220688, 15423, 8170, }, { 10, 1, 8, 4, }, nil, nil, nil, { 81986, }, }, -- Paranoia Mantle
+	-- Alchemy
+	[448085] = { nil, 1, 4, 448085, 222952, 250, 250, 255, 260, 1, 1, { 221021, 220688, 8925, }, { 10, 1, 1, }, nil, nil, nil, { 81986, }, }, -- Flask of Restless Dreams
+	[446851] = { nil, 1, 4, 446851, 221313, 250, 250, 255, 260, 1, 1, { 221021, 8925, 221312,  }, { 5, 1, 5, }, nil, nil, nil, { 81986, }, }, -- Flask of Nightmarish Mojo
+	-- Tailoring
+	[446195] = { nil, 1, 8, 446195, 220751, 250, 250, 255, 260, 1, 1, { 221021, 220688, 14256, 7076, 14048, }, { 10, 1, 6, 2, 3, }, nil, nil, nil, { 81986, }, }, -- Shoulderpads of the Deranged
+	[446194] = { nil, 1, 8, 446194, 220749, 250, 250, 255, 260, 1, 1, { 221021, 220688, 12803, 16000, }, { 10, 1, 4, 10, }, nil, nil, nil, { 81986, }, }, -- Mantle of Insanity
+	[446193] = { nil, 1, 8, 446193, 220750, 250, 250, 255, 260, 1, 1, { 221021, 220688, 14256, 16000, }, { 10, 1, 8, 8, }, nil, nil, nil, { 81986, }, }, -- Fractured Mind Pauldrons
+	-- Engineering
+	[446238] = { nil, 1, 9, 446238, 221027, 250, 250, 255, 260, 1, 1, { 221021, 220688, 220689, 10558, 16000, }, { 10, 1, 1, 2, 2, }, nil, nil, nil, { 81986, }, }, -- Void-Powered Protector's Vambraces
+	[446237] = { nil, 1, 9, 446237, 221026, 250, 250, 255, 260, 1, 1, { 221021, 220688, 220689, 15992, 7910, }, { 10, 1, 1, 3, 2, }, nil, nil, nil, { 81986, }, }, -- Void-Powered Slayer's Vambraces
+	[446236] = { nil, 1, 9, 446236, 221025, 250, 250, 255, 260, 1, 1, { 221021, 220688, 220689, 10558, 15994, }, { 10, 1, 1, 2, 2, }, nil, nil, nil, { 81986, }, }, -- Void-Powered Invoker's Vambraces
+	-- Enchanting 
+	[446243] = { nil, 1, 10, 446243, 221028, 250, 250, 255, 260, 1, 1, { 11176, 221021, }, { 5, 1 }, nil, nil, nil, { 81986, }, }, -- Sigil of Living Dreams
+	[448624] = { nil, 1, 10, 448624, 220792, 120, 120, 125, 130, 1, 1, { 4470, 10940, }, { 1, 4, }, 222188, nil, { 223163, }, }, -- Scroll of Spatial Mending
 	-- SoD Phase 2
 	-- BS
 	[435910] = { nil, 1, 2, 435910, 213376, 200, 200, 210, 220, 1, 1, { 6037, 213373, }, { 1, 5, }, nil, nil, { 215384, }, }, -- Low-Background Truesilver Plates
@@ -1597,6 +1623,10 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		23787,
 	},
 	[2] = {
+		-- P3 Adds
+		446179, -- Shoulderplates of Dread
+		446188, -- Fearmonger's Shoulderguards
+		446191, -- Baleful Pauldrons
 		-- P2 Adds
 		435910, -- Low-Background Truesilver Plates
 		435906, -- Reflective Truesilver Braincage
@@ -1849,6 +1879,13 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		27590,
 	},
 	[3] = {
+		-- P3 Adds
+		446192, -- Membrane of Dark Neurosis
+		446190, -- Wailing Chain Mantle
+		446189, -- Shoulderpads of Obsession
+		446186, -- Cacophonous Chain Shoulders
+		446185, -- Shrieking Spaulders
+		446183, -- Paranoia Mantle
 		-- P2 Adds
 		435953, -- Rad-Resistant Scale Hood
 		435951, -- Gneuro-Conductive Channeler's Hood
@@ -2095,6 +2132,9 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		24654,
 	},
 	[4] = {
+		-- P3 Adds
+		448085, -- Flask of Restless Dreams
+		446851, -- Flask of Nightmarish Mojo
 		-- P2 Adds
 		435969, -- Insulating Gniodine
 		435971, -- Mildly-Irradiated Rejuvenation Potion
@@ -2309,6 +2349,10 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		22967,
 	},
 	[8] = {
+		-- P3 Adds
+		446195, -- Shoulderpads of the Deranged
+		446194, -- Mantle of Insanity
+		446193, -- Fractured Mind Pauldrons
 		-- P2 Adds
 		435610, -- Gneuro-Linked Arcano-Filament Monocle
 		-- P2 Changes
@@ -2546,6 +2590,10 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		27660,
 	},
 	[9] = {
+		-- P3 Adds
+		446238, -- Void-Powered Protector's Vambraces
+		446237, -- Void-Powered Slayer's Vambraces
+		446236, -- Void-Powered Invoker's Vambraces
 		-- P2 Adds
 		435966, -- Ez-Thro Radiation Bomb
 		435964, -- High-Yield Radiation Bomb
@@ -2719,6 +2767,9 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		24357,
 	},
 	[10] = {
+		-- P3 Adds
+		446243, -- Sigil of Living Dreams
+		448624, -- Scroll of Spacial Mending
 		-- P2 Adds
 		435481, -- Dismantle
 		435903, -- Retricutioner
