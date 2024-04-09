@@ -1,0 +1,5 @@
+# Ignore all files with the specified name.
+# Scope is all repo folders.
+/.vs
+/.vs/slnx.sqlite
+/.vs/alaTradeSkill/v17/.wsuo
