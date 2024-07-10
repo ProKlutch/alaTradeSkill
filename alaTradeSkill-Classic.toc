@@ -1,4 +1,4 @@
-## Interface: 11502
+## Interface: 11503
 ## Title: ala's Trade Skill
 ## Title-zhCN: ala's Trade Skill
 ## Title-zhTW: ala's Trade Skill
