@@ -213,6 +213,7 @@ local T_Recipe_Data = {
 --	TradeSkill
 	-- SoD Phase 4
 	-- Enchanting
+	[463866] = { nil, 1, 10, 463866, 228978, 290, 320, 340, 360, 1, 1, { 16204, }, { 1, }, nil, nil, { 228979, }, }, -- Enchanted Sigil: Flowing Waters
 	[463869] = { nil, 1, 10, 463869, 228980, 275, 275, 300, 300, 1, 1, { 16204, 4625, 8925, }, { 2, 1, 1, }, nil, nil, { 228981, }, }, -- Conductive Shield Coating
 	[463871] = { nil, 1, 10, 463871, nil, 300, 320, 340, 360, 1, 1, { 14344, 16203, 7078, 7080, 7076, 12811, }, { 4, 12, 4, 4, 1, 1, }, nil, nil, { 228982, }, }, -- Enchant Shield - Law of Nature
 	-- SoD Phase 3
@@ -2772,6 +2773,7 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 	},
 	[10] = {
 		-- P4 Adds
+		463866, -- Enchanted Sigil: Flowing Waters
 		463869, -- Conductive Shield Coating
 		463871, -- Enchant Shield - Law of Nature
 		-- P3 Adds
