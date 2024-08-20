@@ -1,8 +1,8 @@
 --[[--
-	ALA@163UI
+	by ALA
 --]]--
 
-local __version = 221018.0;
+local __version = 240730.0;
 
 local _G = _G;
 _G.__ala_meta__ = _G.__ala_meta__ or {  };
@@ -200,7 +200,7 @@ local __serializer = __ala_meta__.__serializer;
 	};
 	local function UNIT_GUID(channel, target)
 		--	alaTradeSkillSV.var[GUID] = {  }
-		--	alaTalentEmuSV.var[GUID] = ""
+		--	TalentEmuSV.var[GUID] = ""
 		--	alaUnitFrameSV.__seen[GUID] = true
 		--	alaMiscSV.instance_timer_sv.var[GUID] = {  }
 		--	alaMiscSV.target_warn_sv[GUID] = {  }
@@ -212,8 +212,8 @@ local __serializer = __ala_meta__.__serializer;
 				_TGUID[GUID] = true;
 			end
 		end
-		if alaTalentEmuSV and alaTalentEmuSV.var then
-			for GUID, _ in next, alaTalentEmuSV.var do
+		if TalentEmuSV and TalentEmuSV.var then
+			for GUID, _ in next, TalentEmuSV.var do
 				_TGUID[GUID] = true;
 			end
 		end
@@ -461,7 +461,7 @@ local __serializer = __ala_meta__.__serializer;
 		end
 	end
 	local function CommSerializerd(v)
-		return gsub(gsub(__serializer._F_coreSerializer(v), ":", ":1"), "`", ":2");
+		return gsub(gsub(__serializer._F_Serializer(v), ":", ":1"), "`", ":2");
 	end
 	local function GetSerializerd(c, pos)
 		local top = #c;

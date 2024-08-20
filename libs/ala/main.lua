@@ -1,7 +1,8 @@
 --[[--
-	alex/ALA @ 163UI
+	by ALA
 --]]--
 local __version = 220824.0;
+local GetAddOnInfo = GetAddOnInfo or C_AddOns.GetAddOnInfo;
 
 local _G = _G;
 _G.__ala_meta__ = _G.__ala_meta__ or {  };
@@ -102,7 +103,7 @@ end
 
 local GetAddOnInfo = GetAddOnInfo;
 local IsAddOnLoaded = IsAddOnLoaded;
-local GetAddOnEnableState = GetAddOnEnableState;
+local GetAddOnMetadata = GetAddOnMetadata;
 local _AddOnList = {
 	"ElvUI",
 	"Tukui",
@@ -319,9 +320,9 @@ local function dev()
 			Cur = 0;
 			for index = 1, Cur do
 				local Line = Lines[index];
-				Line[1]:SetText(nil);
-				Line[2]:SetText(nil);
-				Line[3]:SetText(nil);
+				Line[1]:SetText("");
+				Line[2]:SetText("");
+				Line[3]:SetText("");
 			end
 		end
 		function DisplayPanel:Render()
@@ -343,20 +344,15 @@ local function dev()
 			if version ~= nil and version ~= "" then
 				DisplayPanel:AddDoubleLine(addon, "#|cffffff00" .. version .. "|r");
 			else
-				version = GetAddOnMetadata(addon, "X-163UI-Version");
-				if version ~= nil and version ~= "" then
-					DisplayPanel:AddDoubleLine(addon, "#|cffff7f00" .. version .. "|r");
-				else
-					DisplayPanel:AddLeftLine("|cffff0000" .. addon .. "|r");
-				end
+				DisplayPanel:AddLeftLine("|cffff0000" .. addon .. "|r");
 			end
 		end
 	end
 	local FirstLib = true;
-	for _, TalentDef in inext, _LibList, 0 do
+	for _, v in inext, _LibList, 0 do
 		local val = _G;
-		for index = 2, #TalentDef do
-			val = val[TalentDef[index]];
+		for index = 2, #v do
+			val = val[v[index]];
 			if val == nil then
 				break;
 			end
@@ -366,7 +362,7 @@ local function dev()
 				FirstLib = false;
 				DisplayPanel:AddMiddleLine("****|cffff00ffLibList|r****");
 			end
-			DisplayPanel:AddDoubleLine(TalentDef[1], "#|cffff7f00" .. val .. "|r");
+			DisplayPanel:AddDoubleLine(v[1], "#|cffff7f00" .. val .. "|r");
 		end
 	end
 	DisplayPanel:Render();

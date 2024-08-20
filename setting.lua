@@ -1,9 +1,5 @@
 --[[--
-	by ALA @ 163UI
-	##	TODO	--	let them sunk in shit
-		Communication Func, query from others or broadcast to others
-		query skill & query specified sid
-		supreme craft
+	by ALA
 --]]--
 ----------------------------------------------------------------------------------------------------
 local __addon, __private = ...;
@@ -152,10 +148,10 @@ MT.BuildEnv("setting");
 		--
 		filter = {
 			-- realm = nil,
-			skill = nil,
-			type = nil,
-			subType = nil,
-			eqLoc = nil,
+			Skill = nil,
+			Type = nil,
+			SubType = nil,
+			EquipLoc = nil,
 		},
 		searchText = "",
 		--
