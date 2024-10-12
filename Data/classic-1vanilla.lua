@@ -211,6 +211,9 @@ local index_spec = 20;
 
 local T_Recipe_Data = {
 --	TradeSkill
+	-- SoD Phase 5
+	-- Enchanting
+	[471400] = { nil, 1, 10, 471400, 232611, 300, 300, 300, 300, 1, 1, { 8151, 8152, 14344, 18256, }, { 3, 3, 2, 1, }, nil, nil, { 232610, }, }, -- Formula: Magnificent Trollshine
 	-- SoD Phase 4
 	-- Enchanting
 	[463866] = { nil, 1, 10, 463866, 228978, 290, 320, 340, 360, 1, 1, { 16204, }, { 1, }, nil, nil, { 228979, }, }, -- Enchanted Sigil: Flowing Waters
@@ -2788,6 +2791,8 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		24357,
 	},
 	[10] = {
+		-- P5 Adds
+		471400, -- Magnificent Trollshine
 		-- P4 Adds
 		463866, -- Enchanted Sigil: Flowing Waters
 		463869, -- Conductive Shield Coating
