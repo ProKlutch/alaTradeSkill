@@ -211,6 +211,30 @@ local index_spec = 20;
 
 local T_Recipe_Data = {
 --	TradeSkill
+	-- SoD Phase 8
+	-- Cooking
+	[1225763] = { nil, 7, 6, 1225763, 238642, 280, 290, 300, 310, 1, 1, { 13888, 3712, 3404, 239017, }, { 12, 4, 3, 1, }, nil, nil, { 239021, }, }, -- Grand Lobster Banquet
+	[1225762] = { nil, 7, 6, 1225762, 238641, 280, 290, 300, 310, 1, 1, { 4603, 12184, 6362, 239017, }, { 12, 4, 3, 1, }, nil, nil, { 239021, }, }, -- Specklefin Feast
+	[1225759] = { nil, 7, 6, 1225759, 238638, 250, 260, 270, 280, 2, 2, { 12203, 239016, }, { 2, 1, }, nil, nil, { 238646, }, }, -- Filet o' Flank
+	[1225758] = { nil, 7, 6, 1225758, 238637, 250, 260, 270, 280, 2, 2, { 12202, 239016, }, { 2, 1, }, nil, nil, { 238645, }, }, -- Prowler Steak
+	[1225760] = { nil, 7, 6, 1225760, 238639, 250, 260, 270, 280, 2, 2, { 12207, 239016, }, { 2, 1, }, nil, nil, { 238647, }, }, -- Sunrise Omelette
+	-- Engineering
+	[1226213] = { nil, 7, 9, 1226213, 238781, 300, 305, 305, 305, 1, 1, { 16006, 18631, 10560, 10561, 10588, 12811, }, { 1, 2, 1, 2, 2, 1, }, nil, nil, { 238789, }, }, -- Semisafe Transporter: New Avalon
+	[1226209] = { nil, 7, 9, 1226209, 238736, 260, 270, 280, 290, 1, 2, { 238737, 10560, 10560, }, { 1, 1, 2, }, nil, nil, { 238785, }, }, -- Tinkerbox Magnetic Displacement
+	[1226208] = { nil, 7, 9, 1226208, 238735, 260, 270, 280, 290, 1, 2, { 238737, 10560, 16000, }, { 1, 1, 1, }, nil, nil, { 238784, }, }, -- Tinkerbox Nitro Boosts
+	[1226207] = { nil, 7, 9, 1226207, 238734, 260, 270, 280, 290, 1, 2, { 238737, 10560, 15994, }, { 1, 1, 1, }, nil, nil, { 238783, }, }, -- Tinkerbox Teleport
+	[1228088] = { nil, 7, 9, 1228088, 237023, 250, 255, 257, 260, 1, 1, { 15994, 10560, 4382, }, { 1, 1, 1, }, nil, nil, { 239222, }, }, -- Pop-Up Shrub
+	[1226206] = { nil, 7, 9, 1226206, 238737, 250, 260, 270, 280, 2, 4, { 10561, 10558, }, { 1, 2, }, nil, nil, { 238782, }, }, -- Tinkerbox
+	[1226210] = { nil, 7, 9, 1226210, nil, 250, 280, 282, 285, 0, 0, { 238737, 16006, 15994, }, { 1, 1, 1, }, nil, nil, { 240018, }, }, -- Tinker: Teleport
+	[1226211] = { nil, 7, 9, 1226211, nil, 250, 280, 282, 285, 0, 0, { 238737, 16006, 16000, }, { 1, 1, 1, }, nil, nil, { 240018, }, }, -- Tinker: Nitro Boosts
+	[1226212] = { nil, 7, 9, 1226212, nil, 250, 280, 282, 285, 0, 0, { 238737, 16006, 4387, }, { 1, 1, 2, }, nil, nil, { 240018, }, }, -- Tinker: Magnetic Displacement
+	-- Enchanting
+	[1231139] = { nil, 7, 10, 1231139, nil, 300, 305, 307, 310, 1, 1, { 14344, 12811, 20725, 12938, }, { 10, 4, 4, 1, }, nil, nil, { 241195, }, }, -- 2H - Grand Arcanist
+	[1232172] = { nil, 7, 10, 1232172, nil, 300, 305, 307, 310, 1, 1, { 14344, 12811, 20725, 12938, }, { 10, 6, 4, 1, }, nil, nil, { 242361, }, }, -- 2H - Grand Inquisitor
+	[1231128] = { nil, 7, 10, 1231128, nil, 300, 305, 307, 310, 1, 1, { 14344, 12811, 20725, 12938, }, { 5, 2, 2, 1, }, nil, nil, { 241191, }, }, -- Grand Crusader
+	[1231164] = { nil, 7, 10, 1231164, nil, 300, 305, 307, 310, 1, 1, { 14344, 12811, 20725, 12938, }, { 6, 3, 2, 1, }, nil, nil, { 241201, }, }, -- Grand Sorceror
+	-- Tailoring
+	[1227724] = { nil, 7,  8,  1227724,  239148, 290, 300, 302, 305,  1,  1, { 12938, 14048, 2604, 12808, 12811, }, { 1, 24, 4, 2, 2, }, nil, nil, { 239150, }, },  -- Crimson Dawnwoven Bag
 	-- SoD Phase 7
 	-- Enchanting
 	[1219580] = { nil, 7, 10, 1219580, nil, 300, 320, 340, 360, 1, 1, { 20725, 16204, 12938, 8831, }, { 3, 24, 1, 6, }, nil, nil, nil, }, -- 2H - Spellblasting
@@ -269,13 +293,13 @@ local T_Recipe_Data = {
 	[463869] = { nil, 7, 10, 463869, 228980, 275, 275, 300, 300, 1, 1, { 16204, 4625, 8925, }, { 2, 1, 1, }, nil, nil, { 228981, }, }, -- Conductive Shield Coating
 	[463871] = { nil, 7, 10, 463871, nil, 300, 320, 340, 360, 1, 1, { 14344, 16203, 7078, 7080, 7076, 12811, }, { 4, 12, 4, 4, 1, 1, }, nil, nil, { 228982, }, }, -- Enchant Shield - Law of Nature
 	-- Tailoring
-	[461727] = { nil, 7,  8,  461727,  227844, 300, 315, 330, 345,   1,   1, { 14048, 8170, 14341, 15407, }, { 5, 2, 1, 1, }, nil, nil, { 228121, }, },  -- Leather-Reinforced Runecloth Bag
-	[463972] = { nil, 7,  8,  463972,  228994, 300, 315, 330, 345,   1,   1, { 14048, 14342, 14344, 17012, 14341, }, { 8, 12, 2, 2, 2, }, nil, nil, { 228993, }, }, -- Bottomless Bag
-	[461750] = { nil, 7,  8,  461750,  227863, 300, 315, 330, 345,   1,   1, { 14048, 14342, 12800, 12810, 14341, }, { 4, 6, 1, 2, 2, }, nil, nil, { 228317, }, }, -- Incandescent Mooncloth Circlet
-	[461747] = { nil, 7,  8,  461747,  227860, 300, 315, 330, 345,   1,   1, { 14048, 14342, 14341, }, { 6, 4, 1, }, nil, nil, { 228316, }, }, -- Incandescent Mooncloth Vest
-	[461708] = { nil, 7,  8,  461708,  227861, 300, 315, 330, 345,   1,   1, { 14048, 14342, 13926, 14341, }, { 6, 4, 2, 2, }, nil, nil, { 228303, }, }, -- Incandescent Mooncloth Robe
-	[461752] = { nil, 7,  8,  461752,  227864, 300, 305, 320, 335,   1,   1, { 14048, 14342, 14341, }, { 6, 4, 1, }, nil, nil, { 228318, }, }, -- Incandescent Mooncloth Leggings
-	[462282] = { nil, 7,  8,  462282,  228476, 300, 315, 330, 345,   1,   1, { 14048, 9210, 14342, 7080, 7078, 14344, 14341, }, { 16, 10, 10, 12, 12, 6, 6, }, nil, nil, { 228477, }, }, -- Embroidered Belt of the Archmage
+	[461727] = { nil, 7,  8,  461727,  227844, 300, 315, 330, 345, 1, 1, { 14048, 8170, 14341, 15407, }, { 5, 2, 1, 1, }, nil, nil, { 228121, }, },  -- Leather-Reinforced Runecloth Bag
+	[463972] = { nil, 7,  8,  463972,  228994, 300, 315, 330, 345, 1, 1, { 14048, 14342, 14344, 17012, 14341, }, { 8, 12, 2, 2, 2, }, nil, nil, { 228993, }, }, -- Bottomless Bag
+	[461750] = { nil, 7,  8,  461750,  227863, 300, 315, 330, 345, 1, 1, { 14048, 14342, 12800, 12810, 14341, }, { 4, 6, 1, 2, 2, }, nil, nil, { 228317, }, }, -- Incandescent Mooncloth Circlet
+	[461747] = { nil, 7,  8,  461747,  227860, 300, 315, 330, 345, 1, 1, { 14048, 14342, 14341, }, { 6, 4, 1, }, nil, nil, { 228316, }, }, -- Incandescent Mooncloth Vest
+	[461708] = { nil, 7,  8,  461708,  227861, 300, 315, 330, 345, 1, 1, { 14048, 14342, 13926, 14341, }, { 6, 4, 2, 2, }, nil, nil, { 228303, }, }, -- Incandescent Mooncloth Robe
+	[461752] = { nil, 7,  8,  461752,  227864, 300, 305, 320, 335, 1, 1, { 14048, 14342, 14341, }, { 6, 4, 1, }, nil, nil, { 228318, }, }, -- Incandescent Mooncloth Leggings
+	[462282] = { nil, 7,  8,  462282,  228476, 300, 315, 330, 345, 1, 1, { 14048, 9210, 14342, 7080, 7078, 14344, 14341, }, { 16, 10, 10, 12, 12, 6, 6, }, nil, nil, { 228477, }, }, -- Embroidered Belt of the Archmage
 	-- SoD Phase 3
 	-- BS
 	[446179] = { nil, 7, 2, 446179, 220738, 250, 250, 255, 260, 1, 1, { 221021, 220688, }, { 10, 1, }, nil, nil, nil, { 81986, }, }, -- Shoulderplates of Dread
@@ -2318,7 +2342,13 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		17638,
 	},
 	[6] = {
-		-- Sod Phase 6
+		-- SoD Phase 8
+		1225763, -- Grand Lobster Banquet
+		1225762, -- Specklefin Feast
+		1225759, -- Filet o' Flank
+		1225758, -- Prowler Steak
+		1225760, -- Sunrise Omelette
+		-- SoD Phase 6
 		470370, -- Smoked Redgill
 		470359, -- Darkclaw Bisque
 		2540,
@@ -2418,6 +2448,8 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		22967,
 	},
 	[8] = {
+		-- P8
+		1227724, -- Crimson Dawnwoven Bag
 		-- P4 Adds
 		461727, -- Leather-Reinforced Runecloth Bag
 		463972, -- Bottomless Bag
@@ -2666,8 +2698,18 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		18445,
 		27660,
 	},
-	[9] = {		
-			-- P6 Adds
+	[9] = {	
+		-- P8 Adds
+		1226213, -- Semisafe Transporter: New Avalon
+		1226209, -- Tinkerbox Magnetic Displacement
+		1226208, -- Tinkerbox Nitro Boosts
+		1226207, -- Tinkerbox Teleport
+		1228088, -- Pop-Up Shrub
+		1226206, -- Tinkerbox
+		1226210, -- Tinker: Teleport
+		1226211, -- Tinker: Nitro Boosts
+		1226212, -- Tinker: Magnetic Displacement
+		-- P6 Adds
 		1213588, -- Tuned Force Reactive Disk
 		1214145, -- Obsidian Shotgun
 		1213586, -- G00 DV-1B3 Generator
@@ -2676,7 +2718,7 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		1213573, -- Arcane Megabomb
 		1213646, -- Obsidian Blasting Powder
 		1213578, -- Obsidian Bomb
-			-- P3 Adds
+		-- P3 Adds
 		446238, -- Void-Powered Protector's Vambraces
 		446237, -- Void-Powered Slayer's Vambraces
 		446236, -- Void-Powered Invoker's Vambraces
@@ -2854,6 +2896,11 @@ local T_TradeSkill_RecipeList = {	--	[pid] = { sid }
 		24357,
 	},
 	[10] = {
+		-- P8 Adds
+		1231139, -- 2H - Grand Arcanist
+		1232172, -- 2H - Grand Inquisitor
+		1231128, -- Grand Crusader
+		1231164, -- Grand Sorceror
 		-- P7 Adds
 		1219580, -- 2H - Spellblasting
 		1220624, -- Bracer - Greater Spellpower

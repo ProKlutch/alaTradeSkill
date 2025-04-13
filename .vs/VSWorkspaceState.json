@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Data"
+    "\\Data",
+    "\\libs",
+    "\\libs\\ala"
   ],
+  "SelectedNode": "\\Data\\classic-4cata.lua",
   "PreviewInSolutionExplorer": false
 }
